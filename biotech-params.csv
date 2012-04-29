@@ -1,0 +1,34 @@
+"TIMELINE.nowdate",2002
+"TIMELINE.datafile","biotech-timeline.csv"
+"TIMELINE.templatefile","biotech-templates.py"
+"TIMELINE.topframeheight",78
+"TIMELINE.5digityears",True
+"TIMELINE.pretitle","Long View"
+"TIMELINE.title","Biotechnology Milestones"
+"TIMELINE.section","8000BC","1BC",1000
+"TIMELINE.section",0,1499,500
+"TIMELINE.section",1500,1649,150
+"TIMELINE.section",1650,1699,50
+"TIMELINE.section",1700,"Ongoing",10
+"TIMELINE.intervalsize",100
+"TIMELINE.leftmargin",50
+"TIMELINE.minbarwidth",10
+"TIMELINE.navcell","8000BC","Bottom",
+"TIMELINE.navcell","3000BC","Bottom",
+"TIMELINE.navcell",1500,"Bottom",
+"TIMELINE.navcell",1740,"Bottom",
+"TIMELINE.navcell",1800,"Bottom",
+"TIMELINE.navcell",1860,"Bottom",
+"TIMELINE.navcell",1920,"Top",
+"TIMELINE.navcell",1980,"Top","Now"
+"TIMELINE.labelresolution","years"
+"TIMELINE.resolutioninmonths",12
+"EVENTBAR.height",13
+"EVENTBAR.diamondwidth",9
+"EVENTBAR.diamondleftmargin",2
+"EVENTBAR.diamondverticalmargin",0
+"EVENTBAR.color1","cc","cc","ff"
+"EVENTBAR.color2","cc","cc","ff"
+"EVENTBAR.futurecolor","cc","cc","cc"
+"TIMELINE.backgroundstipplecolor",99,99,99
+"TIMELINE.nowbarcolor",99,99,"cc"

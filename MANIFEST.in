@@ -1,0 +1,8 @@
+graft prototype-html
+include MANIFEST.in
+include gdmodule-0.51.diff
+include bets* biotech*
+include ChangeLog NEWS todo.txt README.txt
+include longview.py
+include BSD-LICENSE.txt
+

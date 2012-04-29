@@ -1,0 +1,11 @@
+--- /home/dmose/_gdmodule.c	2004-03-08 16:17:50.591770794 -0800
++++ _gdmodule.c	2004-03-05 20:28:39.000000000 -0800
+@@ -553,7 +553,7 @@
+     }
+ 
+     self->current_tile = tile;
+-    gdImageSetBrush(self->imagedata, tile->imagedata);
++    gdImageSetTile(self->imagedata, tile->imagedata);
+ 
+     Py_INCREF(Py_None);
+     return Py_None;

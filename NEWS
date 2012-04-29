@@ -1,0 +1,183 @@
+version 1.0
+-----------
+* Since, according to gnu.org, the modified BSD-style license is already 
+  GPL compatible, simplified the licensing story by making this BSD-only.
+
+* Fixed off-by-one errors causing incorrect rendering around the now date.
+
+* Replaced the existing yes/no and discussion intensity keys with visually 
+  cleaner implementation.
+
+
+version 0.98
+------------
+* Updated Bets notification HTML as per latest mockup.
+
+* The default notifier now outputs dates more readably as "July 23, 02004"
+  instead of as "02004/07/23".
+
+* Color swatches and a vote discussion intensity image for the key are now
+  generated automatically.  This should fix problems viewing the key in
+  Internet Explorer.
+
+* Added BSD-style and GPL licenses.
+
+* Added QUESTIONS/FEEDBACK and KNOWN ISSUES sections to README.txt.
+
+* Updated arrow gifs and background images to be transparent.
+
+* Added support for new params: TIMELINE.staticimage, TIMELINE.topframeheight,
+  TIMELINE.nowbarcolor, TIMELINE.backgroundstipplecolor, EVENTBAR.nowbarontop,
+  and TIMELINE.nowbarwidth.
+  
+* Fixed up credits and copyright in the scripts.
+
+* Added a <div> for the future section so that the background image always
+  extends to the far right of the timeline.
+
+* Added target="_top" to all external links so that they don't open
+  inside one of the frames.
+
+* Updated bets and biotech examples to closely match the latest mockups; 
+  used biotech style for defaults when possible.
+
+* Updated bets example with more complete data.
+
+* Support interest files without discussion data by failling back to a
+  relativePosts (brightness) constant of 0.5.
+
+* Add support for a special eventbar end-date of "?", which causes the 
+  eventbar to end at the now date, but renders in strings as "?"
+  (without the quotes).
+
+* Add support for a special timeline section end-date of "Ongoing", which 
+  can be used to indicate that the future section should end two intervals
+  after the now-date.
+
+* Fixed a bug where the last anchor target for automatically generated navcells
+  was usually set incorrectly.
+
+* Set the background divider width to TIMELINE.minbarwidth
+
+* Various minor fixes and cleanups: program bugs, credits, copyright notices, 
+  and documentation updates.
+
+
+version 0.97
+------------
+* Implemented notification display.
+
+* The notifications file now includes a rowID field and stores the
+  sent-date in the status field.
+
+* The timeline data file now includes a rowID field.
+
+* Interest file rendering has been implemented.
+
+* All timeline bars are now rendered with merged slicemaker/BarImage
+  code.
+
+* sliceMaker.py code was refactored to make it easier to use from
+  other python code (ie it no longer requires temporary files for I/O).
+
+
+version 0.96
+------------
+* Minor bugfixes from 0.95
+
+
+version 0.95
+------------
+* In timeline data files, all lines must now be preceeded with an item number.
+  The examples have been updated to reflect this change.  We're going to need
+  this item number to correlate each item with corresponding notification data
+  and interest bars.
+
+* The Long Bets example has been updated with some real data from the Long
+  Bets web site.
+
+* Fixed a bug where the navcell outline did not track the clicked-on navcell.
+
+
+version 0.94
+------------
+* The "now" navcells are now generated PNGs which display the now box in
+  the correct spot within the navcell.
+
+* Documented installation dependencies
+
+* If no navcells are specified in a param file, a set of navcells is now
+  generated automatically.
+
+
+version 0.93
+------------
+* Implemented automatic rendering of navbar now cell PNG.  In progress, doesn't
+  actually draw the now box in the right place yet.
+
+* Fixed a bug where not all bars were being rendered with the future section 
+  colored correctly.
+
+* Fixed bug where pastnowcell was not appearing in the right place relative
+  to the background.
+
+* Implemented function overrides; described in detail in README.txt
+
+* Implemented notification capability; described in detail in README.txt
+
+* Implemented distutils-based (i.e the standard python setup.py)
+  packaging scheme, and added logic to longview to run either from a
+  build directory or from an installation
+
+* Removed generated files from the prototype-html directory
+
+
+version 0.92
+------------
+* Created a third python file, the template file, to hold HTML templates, CSS,
+  and function overrides.  Added lots of commentary to the CSS data used in
+  the example template files.
+
+* Tweaked the invocation of longview.py so that only the params file is 
+  given on the command line.  The names of the other files are specified in
+  the params file.
+
+* Added make-dist.py for automatic creation of the release tarball.
+
+
+version 0.91
+------------
+* 5-digit years now supported and used
+
+* YYYYY/MM format now supported
+
+* Lots of miscellaneous code cleanups
+
+* Popup HTML generation is now generalized, and comes from a template
+  in the param file.  As a result, the format of the data file has
+  changed slightly.
+
+
+version 0.9
+-----------
+* what used to be called the appearance file is now referred to as the 
+  parameter file
+
+* bars which cross timeline sections are now given the correct width.
+  Note that in order to do this, sections (as defined by appearance
+  files) are no longer allowed to overlap at the end year, as they did
+  previously
+
+* switched to doing in-place updates of the existing html so that we
+  don't blow out browser HTTP if-modified-since caches by
+  unnecessarily changing file dates.
+
+* color swatch files are now generated
+
+* all timeline bars that cross into the future section are now generated
+
+* eliminated TIMELINE.nowwidth in favor of calculating this
+  dynamically to ensure correctness
+
+* various minor bug fixes
+
