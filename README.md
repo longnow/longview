@@ -1,5 +1,7 @@
 # Introduction
 
+![Screen Shot](https://github.com/longnow/longview/raw/master/screenshot.png)
+
 Long View is a utility written in Python for generating timelines from CSV-formatted data. It's part of the [Long Server](http://longserver.org/) project.
 
 ## REQUIREMENTS
