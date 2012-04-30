@@ -4,12 +4,12 @@
 
 Long View is a utility written in Python for generating timelines from CSV-formatted data. It's part of the [Long Server](http://longserver.org/) project.
 
-## REQUIREMENTS
+## Requirements
 
 * Python 2.3 or Higher
 * Python [GD module](http://newcenturycomputers.net/projects/gdmodule.html)
 
-## INSTALLATION
+## Installation
 
 ### Installing the GD Python Module
 
@@ -23,12 +23,12 @@ Long View is packaged with the standard python ``Distutils``. This means that th
     
 Alternatively, you can run ``./longviews.py`` directly from this directory.
 
-# HOW TO USE
+# How to use
 
 The simplest thing to do is copy one of the examples.  Find the "examples" directory in your install. If you did the simple installation, chances are good that this will be either ``/usr/longview/examples`` or ``/usr/share/longview/examples``. Copy the ``biotech-*`` files somewhere where you can easily edit and modify them. You'll probably want to rename them to something more appropriate for your purpose.
 
 
-## RUNNING THE SCRIPT
+## Running the script
 
 Execute
      
@@ -43,7 +43,7 @@ of
 for a listing of options that are supported.
 
 
-## PARAMETER FILE
+## Parameter File
 
 The first thing to edit is the params file in a spreadsheet.  Make
 sure the ``TIMELINE.datafile`` and ``TIMELINE.templatefile`` parameters point
@@ -59,7 +59,7 @@ year 0, append "BCE" or "BC", as in "8000BCE".
 Most parameters present in the examples are required.
 
 
-## PARAMETERS
+## Parameters
 
 Many of the parameters are fairly self-explanatory, but some are not
 quite so obvious. Some notes:
@@ -117,7 +117,7 @@ parameter is the original filename, and the second is the name that
 the file should have in the img-static sub-directory of the generated
 tree.
 
-## TEMPLATE FILE
+## Template File
 
 The template file is actually a file containing Python code.  The only
 two things that MUST be specified in the template file are the
@@ -148,7 +148,7 @@ display notifications. It can be customized in the same way that the
 popupTemplate can.
 
 
-## DATA FILE
+## Data File
 
 Like the parameter file, this file will typically be created or edited
 using a spreadsheet.  Each line in the data file represents a single
@@ -156,8 +156,7 @@ eventbar item or subitem.
 
 The fields for an item are, in order:
 
-item-number, start-date, end-date, clickthrough-link, title,
-template-argument, [...]
+**item-number, start-date, end-date, clickthrough-link, title, template-argument, [...]**
 
 Note that the string "?" can be used as an end-date, and will cause
 the event bar to end at the "now date", and will render in popups as
@@ -170,15 +169,15 @@ They are drawn as diamonds inside the eventbar of their parent item
 (which is assumed to be the most recently specified item).  Their
 fields are, in order:
 
-(empty), date, clickthrough-link, template-argument, [...]
+**(empty), date, clickthrough-link, template-argument, [...]**
 
 The first template argument given as part of any item or sub-itemline
-is assigned the escape sequence %1.  The next: %2, and so forth.  Each
+is assigned the escape sequence %1. The next: %2, and so forth.  Each
 template argument is substituted into the popup HTML template in place
 of the appropriate escape sequence.
 
 
-## NOTIFICATIONS FILE
+## Notifications File
 
 Long View can optionally provide notifications about specific events.
 By providing several NOTIFY parameters in the param file (see the
@@ -218,7 +217,7 @@ module namespace.  ``NOTIFY.notifierclass`` and ``NOTIFY.notificationclass``
 can be used to override those things.
 
 
-## INTEREST FILE
+## Interest File
 
 By providing ``TIMELINE.interestfile``, ``EVENTBAR.nocolor``,
 ``EVENTBAR.yescolor``, and ``EVENTBAR.saturation`` parameters in the parameter
@@ -241,7 +240,7 @@ single month.
 The rest of the fields should be fairly self-explanatory.
 
 
-## OTHER HOOKS
+## Other Hooks
 
 If you need to override one or more functions in ``longview.py``, simply
 specify a ``TIMELINE.hookfile`` in the param file.  This is simply a
@@ -249,12 +248,12 @@ python file that will be read in near the beginning of execution, and
 any symbols will override those with the same name in longview.py.
 
 
-## LICENSING
+## Licensing
 
 These files can be redistributed and/or modified under a BSD-style license
 (included in the accompanying ``LICENSE`` file).
 
 
-## QUESTIONS/FEEDBACK
+## Questions/Feedback
 
 Questions and/or feedback should be posted on [GitHub](https://github.com/longnow/longview/issues).
