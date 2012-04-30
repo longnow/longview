@@ -156,7 +156,7 @@ eventbar item or subitem.
 
 The fields for an item are, in order:
 
-**item-number, start-date, end-date, clickthrough-link, title, template-argument, [...]**
+    item-number, start-date, end-date, clickthrough-link, title, template-argument, [...]
 
 Note that the string "?" can be used as an end-date, and will cause
 the event bar to end at the "now date", and will render in popups as
@@ -169,7 +169,7 @@ They are drawn as diamonds inside the eventbar of their parent item
 (which is assumed to be the most recently specified item).  Their
 fields are, in order:
 
-**(empty), date, clickthrough-link, template-argument, [...]**
+    (empty), date, clickthrough-link, template-argument, [...]
 
 The first template argument given as part of any item or sub-itemline
 is assigned the escape sequence %1. The next: %2, and so forth.  Each
@@ -195,7 +195,7 @@ View is a month).
 The notifications data file is a CSV file.  Each line in the file has
 up to five fields.  They are, in order:
 
-item-id, date, email-addrs-to-notify, notification-text[, status]
+    item-id, date, email-addrs-to-notify, notification-text[, status]
 
 item-id is the ID of the item in the timeline data file that this notification
 corresponds to ("None" is a valid value).  Notifications will be displayed
@@ -229,7 +229,7 @@ and the darkness of the entire slice represents the intensity of
 discussion.  The interest file is a CSV file.  Each line represents a
 single month's worth of discussion and votes, using the following fields:
 
-item-Id, date, yes-vote-count, no-vote-count, discussion-post-count
+    item-Id, date, yes-vote-count, no-vote-count, discussion-post-count
 
 The itemId assigns a given line to a specific event bar on the
 timeline.
