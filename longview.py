@@ -1,7 +1,8 @@
-#!/usr/bin/python -tt
-"""Usage: longview.py parameter-file
+#!/usr/bin/env python
 
-Takes CSV data and generates Long View HTML pages.
+"""longview.py: Takes CSV data and generates Long View HTML pages.
+
+Usage: ``./longview.py parameter-file``
 """
 
 # Copyright (c) 2004, The Long Now Foundation
@@ -29,28 +30,30 @@ Takes CSV data and generates Long View HTML pages.
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-__author__ = "Dan Mosedale and James Home <timeline@list.longnow.org>"
-__version__ = "1.0"
-__copyright__ = "Copyright (c) 2004 The Long Now Foundation"
-__license__ = "BSD-style"
+from __future__ import absolute_import, division, with_statement
 
-# in pre 3.0 versions of python, without this import, 9/2=4, not 4.5.
-from __future__ import division
-
-import math
-import os
-import sys
-import shutil
 import csv
 import datetime
+import math
+import os
+import shutil
+import sys
 
 from optparse import OptionParser
 from tempfile import mkdtemp
 
 import lvhtml
-import lvutils
 import lvnotify
+import lvutils
 import sliceMaker
+
+__author__ = "Dan Mosedale, James Home, and Ben Keating"
+__maintainer__ = "Ben Keating"
+__email__ = "oss+longview@longnow.org"
+
+__version__ = "1.1"
+__license__ = "BSD-style"
+__status__ = "Beta"
 
 #### CONSTANTS
 

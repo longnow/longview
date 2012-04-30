@@ -1,10 +1,10 @@
-Metadata-Version: 1.0
+Metadata-Version: 1.1
 Name: longview
-Version: 1.0
+Version: 1.1
 Summary: UNKNOWN
-Home-page: http://www.longnow.org/
+Home-page: http://longnow.org/
 Author: The Long Now Foundation
-Author-email: timeline@list.longnow.org
-License: UNKNOWN
+Author-email: oss+longview@longnow.org
+License: BSD-Style
 Description: UNKNOWN
 Platform: UNKNOWN

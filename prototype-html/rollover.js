@@ -7,9 +7,9 @@ function loadimgs()
 {
   if (document.images) 
   {
-    load1 = newimg("img-static/nav-on.gif");		
-    load2 = newimg("img-generated/nav-now-on.png");		
-    load3 = newimg("img-generated/nav-now-off.png");		
+    load1 = newimg("img-static/nav-on.gif");        
+    load2 = newimg("img-generated/nav-now-on.png");        
+    load3 = newimg("img-generated/nav-now-off.png");        
     imgloaded = true;
     onimgs('navnow', 'img-generated/nav-now-on.png',
            'img-generated/nav-now-off.png');

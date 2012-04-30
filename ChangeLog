@@ -1,819 +1,819 @@
 2004-09-18 17:25  dmose
 
-	* MANIFEST.in: Got rid of old GPL reference
+    * MANIFEST.in: Got rid of old GPL reference
 
 2004-09-18 17:24  dmose
 
-	* longview.py, sliceMaker.py: Fix off-by-one errors causing
-	  incorrect rendering around the now date
+    * longview.py, sliceMaker.py: Fix off-by-one errors causing
+      incorrect rendering around the now date
 
 2004-09-18 17:03  dmose
 
-	* longview.py: Got rid of unnecessary line-wrap
+    * longview.py: Got rid of unnecessary line-wrap
 
 2004-09-18 16:21  dmose
 
-	* README.txt, bets-templates.py, biotech-templates.py, longview.py,
-	  lvhtml.py, lvnotify.py, lvutils.py, setup.py, sliceMaker.py,
-	  todo.txt: Bumped version to 1.0; switched to BSD license only,
-	  and added license boilerplate to all the python files.
+    * README.txt, bets-templates.py, biotech-templates.py, longview.py,
+      lvhtml.py, lvnotify.py, lvutils.py, setup.py, sliceMaker.py,
+      todo.txt: Bumped version to 1.0; switched to BSD license only,
+      and added license boilerplate to all the python files.
 
 2004-09-18 16:06  dmose
 
-	* GPL.txt: Getting rid of unnecessary GPL license
+    * GPL.txt: Getting rid of unnecessary GPL license
 
 2004-09-18 15:58  dmose
 
-	* bets-templates.py, longview.py: Generate pass12-style keys
+    * bets-templates.py, longview.py: Generate pass12-style keys
 
 2004-09-18 15:29  dmose
 
-	* bets-templates.py: HTML and CSS changes for pass12
+    * bets-templates.py: HTML and CSS changes for pass12
 
 2004-07-23 02:59  dmose
 
-	* ChangeLog, NEWS: Released 0.98
+    * ChangeLog, NEWS: Released 0.98
 
 2004-07-23 02:53  dmose
 
-	* longview.py: Generate color swatches for vote colors as well as
-	  vote/discussion intensity key images
+    * longview.py: Generate color swatches for vote colors as well as
+      vote/discussion intensity key images
 
 2004-07-23 02:52  dmose
 
-	* bets-templates.py: Updated notification HTML and the key HTML as
-	  per pass11 specs.
+    * bets-templates.py: Updated notification HTML and the key HTML as
+      per pass11 specs.
 
 2004-07-23 02:51  dmose
 
-	* bets-notifications.csv, lvnotify.py: Make default notifier spit
-	  out date in a more human-readable format
+    * bets-notifications.csv, lvnotify.py: Make default notifier spit
+      out date in a more human-readable format
 
 2004-07-22 12:19  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-22 12:19  dmose
 
-	* longview.py: Fix stippling bug
+    * longview.py: Fix stippling bug
 
 2004-07-22 11:55  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-22 11:44  dmose
 
-	* README.txt: Corrected email contact address
+    * README.txt: Corrected email contact address
 
 2004-07-22 02:13  dmose
 
-	* README.txt, bets-params.csv, biotech-params.csv, longview.py,
-	  todo.txt: Added TIMELINE.resolutioninmonths back, as it is
-	  necessary for getting certain calculations right; check for
-	  navCellsManuallySpecified before calling generateNavCells()
-	  rather than reaching out to the global scope from within the
-	  routine; fix a bug where the last anchor target could be set
-	  incorrectly; set the background dividerwidth to
-	  TIMELINE.minbarwidth; allow TIMELINE.nowbarwidth to be specified
-	  again
+    * README.txt, bets-params.csv, biotech-params.csv, longview.py,
+      todo.txt: Added TIMELINE.resolutioninmonths back, as it is
+      necessary for getting certain calculations right; check for
+      navCellsManuallySpecified before calling generateNavCells()
+      rather than reaching out to the global scope from within the
+      routine; fix a bug where the last anchor target could be set
+      incorrectly; set the background dividerwidth to
+      TIMELINE.minbarwidth; allow TIMELINE.nowbarwidth to be specified
+      again
 
 2004-07-22 02:05  dmose
 
-	* lvutils.py: Added passthrough subtraction operator to LVDate
+    * lvutils.py: Added passthrough subtraction operator to LVDate
 
 2004-07-21 16:23  dmose
 
-	* longview.py: Got rid of unused function getResolutionWidth
+    * longview.py: Got rid of unused function getResolutionWidth
 
 2004-07-21 16:02  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-21 16:02  dmose
 
-	* README.txt: Moved RUNNING THE SCRIPT section near the beginning;
-	  added a KNOWN ISSUES section containing a pointer to a currently
-	  relevant Mozilla bug.
+    * README.txt: Moved RUNNING THE SCRIPT section near the beginning;
+      added a KNOWN ISSUES section containing a pointer to a currently
+      relevant Mozilla bug.
 
 2004-07-21 15:54  dmose
 
-	* README.txt, biotech-params.csv, longview.py: Implemented "?" and
-	  "Ongoing" special cases
+    * README.txt, biotech-params.csv, longview.py: Implemented "?" and
+      "Ongoing" special cases
 
 2004-07-21 15:53  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-21 15:53  dmose
 
-	* bets-notifications.csv: changed sample file to have dummy email
-	  addresses
+    * bets-notifications.csv: changed sample file to have dummy email
+      addresses
 
 2004-07-15 23:44  dmose
 
-	* lvutils.py: Make new color scheme the default
+    * lvutils.py: Make new color scheme the default
 
 2004-07-15 23:44  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-15 23:41  dmose
 
-	* biotech-params.csv: Backed out bogus TIMELINE.topframeheight
-	  change
+    * biotech-params.csv: Backed out bogus TIMELINE.topframeheight
+      change
 
 2004-07-15 23:33  dmose
 
-	* bets-interest.csv, bets-timeline.csv: Updated with more complete
-	  bets timeline and interest data
+    * bets-interest.csv, bets-timeline.csv: Updated with more complete
+      bets timeline and interest data
 
 2004-07-15 23:32  dmose
 
-	* longview.py: Support interest files not having discussion date
-	  (fall back to a relativePosts constant of 0.5) and make datafile
-	  parser understand the ? special date in the enddate column
+    * longview.py: Support interest files not having discussion date
+      (fall back to a relativePosts constant of 0.5) and make datafile
+      parser understand the ? special date in the enddate column
 
 2004-07-15 23:30  dmose
 
-	* lvutils.py: Added support for a date with an 'ongoing' attribute
-	  to be converted to a string as a single question mark
+    * lvutils.py: Added support for a date with an 'ongoing' attribute
+      to be converted to a string as a single question mark
 
 2004-07-15 23:29  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-15 22:32  dmose
 
-	* biotech-params.csv, todo.txt: Get rid of bogus extra date string
+    * biotech-params.csv, todo.txt: Get rid of bogus extra date string
 
 2004-07-15 22:26  dmose
 
-	* bets-templates.py, biotech-templates.py: Incorrectly got rid of
-	  smtxt style information; putting it back.
+    * bets-templates.py, biotech-templates.py: Incorrectly got rid of
+      smtxt style information; putting it back.
 
 2004-07-15 22:22  dmose
 
-	* longview.py, lvhtml.py, lvnotify.py, lvutils.py, setup.py,
-	  sliceMaker.py: Fixed up credits and copyright
+    * longview.py, lvhtml.py, lvnotify.py, lvutils.py, setup.py,
+      sliceMaker.py: Fixed up credits and copyright
 
 2004-07-15 22:22  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-15 22:01  dmose
 
-	* biotech-params.csv: Fixed top frame height so that bottom frame
-	  border is exposed
+    * biotech-params.csv: Fixed top frame height so that bottom frame
+      border is exposed
 
 2004-07-15 22:01  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-15 21:36  dmose
 
-	* bets-params.csv, biotech-params.csv, longview.py: Added support
-	  for TIMELINE.backgroundstipplecolor and EVENTBAR.nowbarontop, and
-	  updated biotech-param file to new color scheme
+    * bets-params.csv, biotech-params.csv, longview.py: Added support
+      for TIMELINE.backgroundstipplecolor and EVENTBAR.nowbarontop, and
+      updated biotech-param file to new color scheme
 
 2004-07-15 21:33  dmose
 
-	* sliceMaker.py: Added drawFilledSlice method for easy support of
-	  EVENTBAR.nowbarontop
+    * sliceMaker.py: Added drawFilledSlice method for easy support of
+      EVENTBAR.nowbarontop
 
 2004-07-15 21:32  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-15 21:32  dmose
 
-	* README.txt: Documented TIMELINE.staticimage parameter
+    * README.txt: Documented TIMELINE.staticimage parameter
 
 2004-07-15 21:29  dmose
 
-	* lvutils.py: Changed tile slighty to make debugging easier
+    * lvutils.py: Changed tile slighty to make debugging easier
 
 2004-07-15 21:29  dmose
 
-	* biotech-templates.py: Updated with latest CSS changes from jh
+    * biotech-templates.py: Updated with latest CSS changes from jh
 
 2004-07-14 03:57  dmose
 
-	* bets-bg.jpg, bets-timeline.gif: New images used by latest bets
-	  changes
+    * bets-bg.jpg, bets-timeline.gif: New images used by latest bets
+      changes
 
 2004-07-14 03:56  dmose
 
-	* bets-params.csv, bets-templates.py: Updated to more closely match
-	  Long Bets mockup using the latest round of script changes
+    * bets-params.csv, bets-templates.py: Updated to more closely match
+      Long Bets mockup using the latest round of script changes
 
 2004-07-14 03:55  dmose
 
-	* biotech-params.csv: Updated to sync with latest script changes
+    * biotech-params.csv: Updated to sync with latest script changes
 
 2004-07-14 03:54  dmose
 
-	* longview.py, lvhtml.py: Allow for extra static images
-	  TIMELINE.staticimage; add div for future section; take params
-	  TIMELINE.nowbarcolor, TIMELINE.topframeheight; add
-	  gettimelinestartdate() and gettimelineenddate() functions; don't
-	  write color swatches if no eventbar colors have been specified;
-	  add target of '_top' to external links
+    * longview.py, lvhtml.py: Allow for extra static images
+      TIMELINE.staticimage; add div for future section; take params
+      TIMELINE.nowbarcolor, TIMELINE.topframeheight; add
+      gettimelinestartdate() and gettimelineenddate() functions; don't
+      write color swatches if no eventbar colors have been specified;
+      add target of '_top' to external links
 
 2004-07-14 03:48  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-14 03:47  dmose
 
-	* prototype-html/img-static/: future-bg.gif, labelcell-bg.gif,
-	  multi.gif, popup-arrow.gif: Removed unused images
+    * prototype-html/img-static/: future-bg.gif, labelcell-bg.gif,
+      multi.gif, popup-arrow.gif: Removed unused images
 
 2004-07-14 03:47  dmose
 
-	* prototype-html/img-static/: future-arrow.gif, past-arrow.gif:
-	  Updated with new color scheme and transparent background
+    * prototype-html/img-static/: future-arrow.gif, past-arrow.gif:
+      Updated with new color scheme and transparent background
 
 2004-07-14 03:46  dmose
 
-	* lvutils.py: Skip directories named CVS when updating a tree; make
-	  background of timeline background images be transparent
+    * lvutils.py: Skip directories named CVS when updating a tree; make
+      background of timeline background images be transparent
 
 2004-07-11 20:59  dmose
 
-	* sliceMaker.py: Fixed __author__ credit
+    * sliceMaker.py: Fixed __author__ credit
 
 2004-07-11 20:08  dmose
 
-	* README.txt: Added QUESTIONS/FEEDBACK section with timeline
-	  mailing list address.
+    * README.txt: Added QUESTIONS/FEEDBACK section with timeline
+      mailing list address.
 
 2004-07-11 20:08  dmose
 
-	* MANIFEST.in: Added license files
+    * MANIFEST.in: Added license files
 
 2004-07-11 20:05  dmose
 
-	* README.txt, todo.txt: Documented interest file
+    * README.txt, todo.txt: Documented interest file
 
 2004-07-11 20:04  dmose
 
-	* .cvsignore: updated
+    * .cvsignore: updated
 
 2004-07-11 19:49  dmose
 
-	* setup.py: Add boilerplate variables
+    * setup.py: Add boilerplate variables
 
 2004-07-11 19:46  dmose
 
-	* BSD-LICENSE.txt, GPL.txt, README.txt, longview.py, lvhtml.py,
-	  lvnotify.py, lvutils.py, sliceMaker.py, todo.txt: Added GPL and
-	  BSD-style licenses
+    * BSD-LICENSE.txt, GPL.txt, README.txt, longview.py, lvhtml.py,
+      lvnotify.py, lvutils.py, sliceMaker.py, todo.txt: Added GPL and
+      BSD-style licenses
 
 2004-07-11 18:20  dmose
 
-	* longview.py, todo.txt: Cleaned up interest bar code
+    * longview.py, todo.txt: Cleaned up interest bar code
 
 2004-07-11 17:56  dmose
 
-	* README.txt, bets-params.csv, biotech-params.csv, longview.py,
-	  todo.txt: Got rid of TIMELINE.resolutioninmonths parameter
+    * README.txt, bets-params.csv, biotech-params.csv, longview.py,
+      todo.txt: Got rid of TIMELINE.resolutioninmonths parameter
 
 2004-07-11 17:49  dmose
 
-	* README.txt, todo.txt: Documented TIMELINE.labelresolution
+    * README.txt, todo.txt: Documented TIMELINE.labelresolution
 
 2004-07-11 17:47  dmose
 
-	* NEWS, longview.py, setup.py: Bumped version numbers
+    * NEWS, longview.py, setup.py: Bumped version numbers
 
 2004-07-11 17:47  dmose
 
-	* todo.txt: Updated
+    * todo.txt: Updated
 
 2004-07-11 17:46  dmose
 
-	* README.txt: Updated notification docs
+    * README.txt: Updated notification docs
 
 2004-07-11 17:02  dmose
 
-	* NEWS: Forgot a couple of features
+    * NEWS: Forgot a couple of features
 
 2004-07-11 16:54  dmose
 
-	* ChangeLog, NEWS: Release version 0.97
+    * ChangeLog, NEWS: Release version 0.97
 
 2004-07-11 16:44  dmose
 
-	* todo.txt: Implemented notification display
+    * todo.txt: Implemented notification display
 
 2004-07-11 16:43  dmose
 
-	* bets-notifications.csv, bets-params.csv, bets-templates.py,
-	  biotech-params.csv, biotech-timeline.csv, longview.py,
-	  lvnotify.py, todo.txt: Corrected typo'd rowId
+    * bets-notifications.csv, bets-params.csv, bets-templates.py,
+      biotech-params.csv, biotech-timeline.csv, longview.py,
+      lvnotify.py, todo.txt: Corrected typo'd rowId
 
 2004-07-11 10:34  dmose
 
-	* ChangeLog, biotech-notifications.csv, longview.py, lvnotify.py,
-	  todo.txt: Make notifications store date sent in the status field
+    * ChangeLog, biotech-notifications.csv, longview.py, lvnotify.py,
+      todo.txt: Make notifications store date sent in the status field
 
 2004-07-11 10:20  dmose
 
-	* lvutils.py: Fix newly introduced bugs
+    * lvutils.py: Fix newly introduced bugs
 
 2004-07-11 03:44  dmose
 
-	* lvutils.py: Code cleanups suggested by pychecker
+    * lvutils.py: Code cleanups suggested by pychecker
 
 2004-07-11 01:09  dmose
 
-	* bets-params.csv, biotech-params.csv, longview.py, lvutils.py,
-	  sliceMaker.py, todo.txt: Moved diamond drawing routines to
-	  SlicedImage; draw all bars with SlicedImage in preparation for
-	  notification display; got rid of BarImage
+    * bets-params.csv, biotech-params.csv, longview.py, lvutils.py,
+      sliceMaker.py, todo.txt: Moved diamond drawing routines to
+      SlicedImage; draw all bars with SlicedImage in preparation for
+      notification display; got rid of BarImage
 
 2004-07-10 18:48  dmose
 
-	* NEWS, bets-params.csv, longview.py, todo.txt: Implement interest
-	  file rendering; lots of small incidental bugfixes along the way
+    * NEWS, bets-params.csv, longview.py, todo.txt: Implement interest
+      file rendering; lots of small incidental bugfixes along the way
 
 2004-07-10 18:46  dmose
 
-	* sliceMaker.py: Misc. fixes
+    * sliceMaker.py: Misc. fixes
 
 2004-07-10 18:46  dmose
 
-	* setup.py: Make sure that we package up new files
+    * setup.py: Make sure that we package up new files
 
 2004-07-08 20:32  dmose
 
-	* sliceMaker.py: Refactor slicemaker API a bit to make it easier to
-	  user from other python code, without going through the
-	  file-reading
+    * sliceMaker.py: Refactor slicemaker API a bit to make it easier to
+      user from other python code, without going through the
+      file-reading
 
 2004-07-08 14:04  dmose
 
-	* sliceMaker.py: Moved a couple of functions inside their caller in
-	  prep for more OO pixie dust
+    * sliceMaker.py: Moved a couple of functions inside their caller in
+      prep for more OO pixie dust
 
 2004-07-08 14:02  dmose
 
-	* sliceMaker.py: Rearranged function order in preparation for some
-	  OO pixie dust
+    * sliceMaker.py: Rearranged function order in preparation for some
+      OO pixie dust
 
 2004-07-07 17:59  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-07-06 22:45  dmose
 
-	* longview.py, setup.py: Bumped version numbers
+    * longview.py, setup.py: Bumped version numbers
 
 2004-07-06 22:43  dmose
 
-	* NEWS: Updated
+    * NEWS: Updated
 
 2004-07-06 22:37  dmose
 
-	* ChangeLog, longview.py, setup.py, todo.txt: Released version 0.96
+    * ChangeLog, longview.py, setup.py, todo.txt: Released version 0.96
 
 2004-07-06 22:36  dmose
 
-	* bets-timeline.csv: Fix some typos in the bets timeline data
+    * bets-timeline.csv: Fix some typos in the bets timeline data
 
 2004-07-06 22:24  dmose
 
-	* ChangeLog, NEWS, bets-params.csv, todo.txt: Released version 0.95
+    * ChangeLog, NEWS, bets-params.csv, todo.txt: Released version 0.95
 
 2004-07-06 22:06  dmose
 
-	* bets-params.csv, bets-timeline.csv: Update long bets examples
-	  with some real data from the Long Bets site
+    * bets-params.csv, bets-timeline.csv: Update long bets examples
+      with some real data from the Long Bets site
 
 2004-07-06 21:37  dmose
 
-	* README.txt, bets-templates.py, bets-timeline.csv,
-	  biotech-timeline.csv, longview.py, lvhtml.py: All eventbars now
-	  require an item-number (also used in the HTML as a node ID.  This
-	  is necessarly so that interest bar data and notifications can be
-	  matched to a specific event bar.
+    * README.txt, bets-templates.py, bets-timeline.csv,
+      biotech-timeline.csv, longview.py, lvhtml.py: All eventbars now
+      require an item-number (also used in the HTML as a node ID.  This
+      is necessarly so that interest bar data and notifications can be
+      matched to a specific event bar.
 
 2004-07-06 21:03  dmose
 
-	* bets-interest.csv, bets-params.csv: Get ready for interest files
+    * bets-interest.csv, bets-params.csv: Get ready for interest files
 
 2004-07-06 18:27  dmose
 
-	* sliceMaker.py: Fixed gd deprecation warnings with explicit
-	  integer casts
+    * sliceMaker.py: Fixed gd deprecation warnings with explicit
+      integer casts
 
 2004-07-06 18:25  dmose
 
-	* sliceMaker.py: Will be used to generate interest bars
+    * sliceMaker.py: Will be used to generate interest bars
 
 2004-07-06 16:56  dmose
 
-	* longview.py, prototype-html/rollover.js: Fixed bug where navcell
-	  outline was not following clicked navcell.
+    * longview.py, prototype-html/rollover.js: Fixed bug where navcell
+      outline was not following clicked navcell.
 
 2004-07-06 16:55  dmose
 
-	* biotech-notifications.csv, todo.txt, .cvsignore: updated
+    * biotech-notifications.csv, todo.txt, .cvsignore: updated
 
 2004-07-06 12:10  dmose
 
-	* longview.py, setup.py: Bumped version numbers
+    * longview.py, setup.py: Bumped version numbers
 
 2004-07-06 12:08  dmose
 
-	* todo.txt: Updated
+    * todo.txt: Updated
 
 2004-07-06 12:08  dmose
 
-	* ChangeLog, NEWS: Released version 0.94
+    * ChangeLog, NEWS: Released version 0.94
 
 2004-07-06 12:06  dmose
 
-	* README.txt: Clarified by changing 'time' to 'date'.
+    * README.txt: Clarified by changing 'time' to 'date'.
 
 2004-06-28 21:31  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-06-28 21:31  dmose
 
-	* bets-params.csv, longview.py: Fix infite loop bug in navcell
-	  generations
+    * bets-params.csv, longview.py: Fix infite loop bug in navcell
+      generations
 
 2004-06-28 21:22  dmose
 
-	* README.txt, longview.py: Implemented automatic navcell generation
+    * README.txt, longview.py: Implemented automatic navcell generation
 
 2004-06-21 19:35  dmose
 
-	* longview.py: Skip left margin when calculating where to put now
-	  box in the navcell; fix error message generation.
+    * longview.py: Skip left margin when calculating where to put now
+      box in the navcell; fix error message generation.
 
 2004-06-21 17:54  dmose
 
-	* README.txt, todo.txt: Documented installation dependencies
+    * README.txt, todo.txt: Documented installation dependencies
 
 2004-06-21 17:37  dmose
 
-	* longview.py, todo.txt: The now navcell PNGs have been fixed to be
-	  generated with the now box in the right spot.
+    * longview.py, todo.txt: The now navcell PNGs have been fixed to be
+      generated with the now box in the right spot.
 
 2004-06-21 17:00  dmose
 
-	* longview.py, setup.py: Bumped version number to 0.94
+    * longview.py, setup.py: Bumped version number to 0.94
 
 2004-06-20 23:51  dmose
 
-	* ChangeLog, NEWS, README.txt, longview.py: Version 0.93 released.
+    * ChangeLog, NEWS, README.txt, longview.py: Version 0.93 released.
 
 2004-06-20 23:42  dmose
 
-	* longview.py, lvutils.py,
-	  prototype-html/img-static/nav-now-off.gif,
-	  prototype-html/img-static/nav-now-on.gif: Initial
-	  partially-working implementation of now cell PNG rendering.
+    * longview.py, lvutils.py,
+      prototype-html/img-static/nav-now-off.gif,
+      prototype-html/img-static/nav-now-on.gif: Initial
+      partially-working implementation of now cell PNG rendering.
 
 2004-06-20 23:41  dmose
 
-	* todo.txt: updated
+    * todo.txt: updated
 
 2004-06-20 23:40  dmose
 
-	* README.txt: Fix typo
+    * README.txt: Fix typo
 
 2004-06-14 18:16  dmose
 
-	* longview.py: Fix bug where not all bars were being rendered with
-	  the future section colored differently.
+    * longview.py: Fix bug where not all bars were being rendered with
+      the future section colored differently.
 
 2004-06-14 17:58  dmose
 
-	* longview.py, lvhtml.py: Fix bug where pastnowcell was not
-	  appearing in the right place relative to the background.
+    * longview.py, lvhtml.py: Fix bug where pastnowcell was not
+      appearing in the right place relative to the background.
 
 2004-06-11 13:48  dmose
 
-	* biotech-params.csv: biotech-params.csv
+    * biotech-params.csv: biotech-params.csv
 
 2004-06-11 13:48  dmose
 
-	* README.txt, biotech-params.csv, longview.py, todo.txt: Implement
-	  function overrides.
+    * README.txt, biotech-params.csv, longview.py, todo.txt: Implement
+      function overrides.
 
 2004-06-11 13:48  dmose
 
-	* bets-templates.py: Fix up whitespace
+    * bets-templates.py: Fix up whitespace
 
 2004-06-11 12:44  dmose
 
-	* biotech-notifications.csv, lvnotify.py, todo.txt: Add
-	  notification capability
+    * biotech-notifications.csv, lvnotify.py, todo.txt: Add
+      notification capability
 
 2004-06-11 12:38  dmose
 
-	* README.txt, biotech-notifications.csv, biotech-params.csv,
-	  longview.py, lvnotify.py, todo.txt: Add notification capability
+    * README.txt, biotech-notifications.csv, biotech-params.csv,
+      longview.py, lvnotify.py, todo.txt: Add notification capability
 
 2004-06-08 20:16  dmose
 
-	* .cvsignore: ignore build directory
+    * .cvsignore: ignore build directory
 
 2004-06-01 18:02  dmose
 
-	* MANIFEST.in, README.txt, todo.txt: Added README.txt file with
-	  documentation
+    * MANIFEST.in, README.txt, todo.txt: Added README.txt file with
+      documentation
 
 2004-05-25 22:53  dmose
 
-	* MANIFEST.in, longview.py, setup.py: Implemented distutils-based
-	  (i.e the standard python setup.py) packaging scheme, and added
-	  logic to longview to run either from a build directory or from an
-	  installation
+    * MANIFEST.in, longview.py, setup.py: Implemented distutils-based
+      (i.e the standard python setup.py) packaging scheme, and added
+      logic to longview to run either from a build directory or from an
+      installation
 
 2004-05-25 22:42  dmose
 
-	* prototype-html/: header.html, index.html, styles.css,
-	  timeline.html: Get rid of generated files in the prototype
-	  directory
+    * prototype-html/: header.html, index.html, styles.css,
+      timeline.html: Get rid of generated files in the prototype
+      directory
 
 2004-05-21 20:57  dmose
 
-	* make-dist.py, setup.py: Renamed make-dist.py to setup.py, as it
-	  will be used for installs as well.
+    * make-dist.py, setup.py: Renamed make-dist.py to setup.py, as it
+      will be used for installs as well.
 
 2004-05-20 01:21  dmose
 
-	* NEWS: minor edits
+    * NEWS: minor edits
 
 2004-05-20 01:19  dmose
 
-	* ChangeLog, NEWS, longview.py: Released version 0.92
+    * ChangeLog, NEWS, longview.py: Released version 0.92
 
 2004-05-20 01:16  dmose
 
-	* todo.txt: Add license/copyright reminder
+    * todo.txt: Add license/copyright reminder
 
 2004-05-20 01:11  dmose
 
-	* gdmodule-0.51-patch, gdmodule-0.51.diff: Renamed
-	  gdmodule-0.51-patch to gdmodule-0.51.diff so that emacs will
-	  automagically do the right thing with it
+    * gdmodule-0.51-patch, gdmodule-0.51.diff: Renamed
+      gdmodule-0.51-patch to gdmodule-0.51.diff so that emacs will
+      automagically do the right thing with it
 
 2004-05-20 01:10  dmose
 
-	* .cvsignore, MANIFEST.in, make-dist.py: Added make.dist.py and
-	  associated files for automatically creating the distribution
-	  tarball.
+    * .cvsignore, MANIFEST.in, make-dist.py: Added make.dist.py and
+      associated files for automatically creating the distribution
+      tarball.
 
 2004-05-18 21:34  dmose
 
-	* bets-params.csv, bets-templates.py, biotech-params.csv,
-	  biotech-templates.py, longview.py, lvhtml.py, todo.txt,
-	  prototype-html/styles.css, prototype-html/timeline.html: Create a
-	  third python file, the template file, to old HTML templates, CSS,
-	  and function overrides.  Tweak the invocation of longview.py so
-	  that only the params file is required.
+    * bets-params.csv, bets-templates.py, biotech-params.csv,
+      biotech-templates.py, longview.py, lvhtml.py, todo.txt,
+      prototype-html/styles.css, prototype-html/timeline.html: Create a
+      third python file, the template file, to old HTML templates, CSS,
+      and function overrides.  Tweak the invocation of longview.py so
+      that only the params file is required.
 
 2004-05-14 12:27  dmose
 
-	* NEWS: Updated for 0.91
+    * NEWS: Updated for 0.91
 
 2004-05-14 12:21  dmose
 
-	* ChangeLog, longview.py: Released 0.91
+    * ChangeLog, longview.py: Released 0.91
 
 2004-05-14 12:20  dmose
 
-	* todo.txt: Updated
+    * todo.txt: Updated
 
 2004-05-14 02:11  dmose
 
-	* bets-params.csv, bets-timeline.csv, biotech-params.csv,
-	  longview.py, lvhtml.py, todo.txt, prototype-html/timeline.html:
-	  First cut at making popup HTML come from a template
+    * bets-params.csv, bets-timeline.csv, biotech-params.csv,
+      longview.py, lvhtml.py, todo.txt, prototype-html/timeline.html:
+      First cut at making popup HTML come from a template
 
 2004-05-13 17:15  dmose
 
-	* biotech-timeline.csv: Moved popup clickthrough link to be column
-	  3
+    * biotech-timeline.csv: Moved popup clickthrough link to be column
+      3
 
 2004-05-12 11:57  dmose
 
-	* bets-params.csv, biotech-params.csv, longview.py, lvutils.py,
-	  todo.txt: Allow dates to be specified as YYYYY/MM or
-	  abbreviations thereof.
+    * bets-params.csv, biotech-params.csv, longview.py, lvutils.py,
+      todo.txt: Allow dates to be specified as YYYYY/MM or
+      abbreviations thereof.
 
 2004-05-11 12:03  dmose
 
-	* bets-params.csv, longview.py, lvhtml.py, lvutils.py, todo.txt:
-	  Miscellaneous cleanups
+    * bets-params.csv, longview.py, lvhtml.py, lvutils.py, todo.txt:
+      Miscellaneous cleanups
 
 2004-05-07 12:34  dmose
 
-	* prototype-html/: header.html, index.html, timeline.html: Updated
-	  with 5-digit years
+    * prototype-html/: header.html, index.html, timeline.html: Updated
+      with 5-digit years
 
 2004-05-06 21:57  dmose
 
-	* biotech-params.csv, longview.py, lvutils.py: Add support for
-	  always printing 5 digit years.
+    * biotech-params.csv, longview.py, lvutils.py: Add support for
+      always printing 5 digit years.
 
 2004-05-06 21:47  dmose
 
-	* todo.txt: Update and prioritize to-do list.
+    * todo.txt: Update and prioritize to-do list.
 
 2004-04-12 15:42  dmose
 
-	* NEWS: Human-readable version of interesting portions of the
-	  changelog.
+    * NEWS: Human-readable version of interesting portions of the
+      changelog.
 
 2004-04-12 15:29  dmose
 
-	* ChangeLog, longview.py: Released version 0.9.
+    * ChangeLog, longview.py: Released version 0.9.
 
 2004-04-12 15:27  dmose
 
-	* bets-appearance.csv, bets-params.csv, biotech-appearance.csv,
-	  biotech-params.csv, longview.py, todo.txt: Appearance file is now
-	  referred to as the parameter file
+    * bets-appearance.csv, bets-params.csv, biotech-appearance.csv,
+      biotech-params.csv, longview.py, todo.txt: Appearance file is now
+      referred to as the parameter file
 
 2004-04-12 15:14  dmose
 
-	* biotech-appearance.csv, longview.py, todo.txt: Cleanup bar width
-	  calculation so that bars which cross timeline segments are
-	  calculated correctly.  Note that in order to do this, sections
-	  (as defined by appearance files) are no longer allowed to overlap
-	  at the end year, as they did previously
+    * biotech-appearance.csv, longview.py, todo.txt: Cleanup bar width
+      calculation so that bars which cross timeline segments are
+      calculated correctly.  Note that in order to do this, sections
+      (as defined by appearance files) are no longer allowed to overlap
+      at the end year, as they did previously
 
 2004-04-12 15:06  dmose
 
-	* prototype-html/timeline.html: Fixed incorrect width calcuation.
+    * prototype-html/timeline.html: Fixed incorrect width calcuation.
 
 2004-04-12 11:34  dmose
 
-	* prototype-html/img-static/: color1.gif, color2.gif: these are now
-	  generated, not static
+    * prototype-html/img-static/: color1.gif, color2.gif: these are now
+      generated, not static
 
 2004-04-07 15:54  dmose
 
-	* longview.py, lvutils.py, todo.txt: Switched to doing in-place
-	  updates of the existing html so that we don't blow out browser
-	  HTTP if-modified-since caches by unnecessarily changing file
-	  dates.  Replaced manual path construction with calls to
-	  os.path.join
+    * longview.py, lvutils.py, todo.txt: Switched to doing in-place
+      updates of the existing html so that we don't blow out browser
+      HTTP if-modified-since caches by unnecessarily changing file
+      dates.  Replaced manual path construction with calls to
+      os.path.join
 
 2004-03-31 20:15  dmose
 
-	* longview.py, lvutils.py, todo.txt: Generate color swatch pngs
+    * longview.py, lvutils.py, todo.txt: Generate color swatch pngs
 
 2004-03-31 15:19  dmose
 
-	* longview.py, lvhtml.py, todo.txt: Make generation of future bar
-	  without subitems work correctly
+    * longview.py, lvhtml.py, todo.txt: Make generation of future bar
+      without subitems work correctly
 
 2004-03-31 13:14  dmose
 
-	* bets-appearance.csv, biotech-appearance.csv, longview.py:
-	  Eliminated TIMELINE.nowwidth in favor of calculating this
-	  dynamically to ensure correctness
+    * bets-appearance.csv, biotech-appearance.csv, longview.py:
+      Eliminated TIMELINE.nowwidth in favor of calculating this
+      dynamically to ensure correctness
 
 2004-03-31 13:13  dmose
 
-	* lvutils.py: Removed __version__; updated default nowWidth
-	  attribute; fixed off-by-one error in drawing now bar
+    * lvutils.py: Removed __version__; updated default nowWidth
+      attribute; fixed off-by-one error in drawing now bar
 
 2004-03-31 13:12  dmose
 
-	* todo.txt: Removed 'onmouseover navigator' item; split out
-	  interest bars and long bets html mockup items
+    * todo.txt: Removed 'onmouseover navigator' item; split out
+      interest bars and long bets html mockup items
 
 2004-03-31 02:07  dmose
 
-	* ChangeLog, longview.py: Updated version number
+    * ChangeLog, longview.py: Updated version number
 
 2004-03-31 02:06  dmose
 
-	* ChangeLog: Updated
+    * ChangeLog: Updated
 
 2004-03-31 02:05  dmose
 
-	* ChangeLog: [no log message]
+    * ChangeLog: [no log message]
 
 2004-03-31 02:05  dmose
 
-	* bets-appearance.csv, bets-timeline.csv, biotech-appearance.csv,
-	  longview.py, lvhtml.py, lvutils.py, todo.txt: Initial
-	  implementation of future color in bar generation; fix Long Bets
-	  mode to work again.
+    * bets-appearance.csv, bets-timeline.csv, biotech-appearance.csv,
+      longview.py, lvhtml.py, lvutils.py, todo.txt: Initial
+      implementation of future color in bar generation; fix Long Bets
+      mode to work again.
 
 2004-03-29 14:32  dmose
 
-	* biotech-timeline.csv, longview.py, lvhtml.py: Incorporate pass8
-	  changes
+    * biotech-timeline.csv, longview.py, lvhtml.py: Incorporate pass8
+      changes
 
 2004-03-28 23:03  dmose
 
-	* prototype-html/: rollover.js, timeline.html, timeline.js: Changes
-	  for pass8
+    * prototype-html/: rollover.js, timeline.html, timeline.js: Changes
+      for pass8
 
 2004-03-26 14:35  dmose
 
-	* biotech-appearance.csv, longview.py, lvutils.py, todo.txt: Add
-	  generation of imagebars with diamonds
+    * biotech-appearance.csv, longview.py, lvutils.py, todo.txt: Add
+      generation of imagebars with diamonds
 
 2004-03-24 21:34  dmose
 
-	* biotech-appearance.csv, longview.py, lvhtml.py, todo.txt:
-	  Generate imagemap HTML, fix some math errors
+    * biotech-appearance.csv, longview.py, lvhtml.py, todo.txt:
+      Generate imagemap HTML, fix some math errors
 
 2004-03-23 16:28  dmose
 
-	* biotech-timeline.csv, longview.py, lvhtml.py, lvutils.py,
-	  prototype-html/timeline.html: Generate all the sub-item popups
+    * biotech-timeline.csv, longview.py, lvhtml.py, lvutils.py,
+      prototype-html/timeline.html: Generate all the sub-item popups
 
 2004-03-22 17:16  dmose
 
-	* longview.py, lvhtml.py, lvutils.py: updates to properly generate
-	  pass7 changes
+    * longview.py, lvhtml.py, lvutils.py: updates to properly generate
+      pass7 changes
 
 2004-03-22 17:14  dmose
 
-	* prototype-html/: timeline.html, header.html: a few tweaks to make
-	  the diffing easier
+    * prototype-html/: timeline.html, header.html: a few tweaks to make
+      the diffing easier
 
 2004-03-22 12:40  dmose
 
-	* prototype-html/: header.html, rollover.js, styles.css,
-	  timeline.html: pass7 changes
+    * prototype-html/: header.html, rollover.js, styles.css,
+      timeline.html: pass7 changes
 
 2004-03-22 12:32  dmose
 
-	* prototype-html/img-static/: color1.gif, color2.gif,
-	  future-bg.gif, labelcell-bg.gif, multi.gif, nav-now-on.gif,
-	  nav-on.gif, popup-arrow.gif, popup-bg-trans.gif, popup-bg.gif:
-	  [no log message]
+    * prototype-html/img-static/: color1.gif, color2.gif,
+      future-bg.gif, labelcell-bg.gif, multi.gif, nav-now-on.gif,
+      nav-on.gif, popup-arrow.gif, popup-bg-trans.gif, popup-bg.gif:
+      [no log message]
 
 2004-03-22 12:27  dmose
 
-	* prototype-html/img-static/: ff-logo.jpg, future-arrow.gif,
-	  longview-power.gif, nav-now-off.gif, nav-off.gif, no.gif,
-	  past-arrow.gif: static files
+    * prototype-html/img-static/: ff-logo.jpg, future-arrow.gif,
+      longview-power.gif, nav-now-off.gif, nav-off.gif, no.gif,
+      past-arrow.gif: static files
 
 2004-03-22 12:05  dmose
 
-	* longview.py, lvutils.py, todo.txt: Add option parser, missing
-	  newlines; update comments + to-do list
+    * longview.py, lvutils.py, todo.txt: Add option parser, missing
+      newlines; update comments + to-do list
 
 2004-03-18 17:46  dmose
 
-	* longview.py, lvutils.py: Switch from year numbers as to the
-	  month-based LVDate class
+    * longview.py, lvutils.py: Switch from year numbers as to the
+      month-based LVDate class
 
 2004-03-08 16:20  dmose
 
-	* longview.py: Bumped version number
+    * longview.py: Bumped version number
 
 2004-03-08 16:19  dmose
 
-	* gdmodule-0.51-patch: Patch to python gdmodule 0.51 (and 0.52) to
-	  make tiling work
+    * gdmodule-0.51-patch: Patch to python gdmodule 0.51 (and 0.52) to
+      make tiling work
 
 2004-03-08 15:30  dmose
 
-	* biotech-appearance.csv, longview.py, lvhtml.py, lvutils.py,
-	  todo.txt: Timeline background png generation implemented and
-	  hooked into main program
+    * biotech-appearance.csv, longview.py, lvhtml.py, lvutils.py,
+      todo.txt: Timeline background png generation implemented and
+      hooked into main program
 
 2004-03-07 23:56  dmose
 
-	* .cvsignore: Duh
+    * .cvsignore: Duh
 
 2004-03-07 19:29  dmose
 
-	* lvutils.py: Various cleanups and documentation
+    * lvutils.py: Various cleanups and documentation
 
 2004-03-05 21:08  dmose
 
-	* lvutils.py: Utilities
+    * lvutils.py: Utilities
 
 2004-03-04 16:58  dmose
 
-	* bets-appearance.csv, bets-timeline.csv, biotech-appearance.csv,
-	  biotech-timeline.csv, longview.py, lvhtml.py, todo.txt,
-	  prototype-html/header.html, prototype-html/index.html,
-	  prototype-html/rollover.js, prototype-html/styles.css,
-	  prototype-html/timeline.html: Imported sources
+    * bets-appearance.csv, bets-timeline.csv, biotech-appearance.csv,
+      biotech-timeline.csv, longview.py, lvhtml.py, todo.txt,
+      prototype-html/header.html, prototype-html/index.html,
+      prototype-html/rollover.js, prototype-html/styles.css,
+      prototype-html/timeline.html: Imported sources
 
 2004-03-04 16:58  dmose
 
-	* bets-appearance.csv, bets-timeline.csv, biotech-appearance.csv,
-	  biotech-timeline.csv, longview.py, lvhtml.py, todo.txt,
-	  prototype-html/header.html, prototype-html/index.html,
-	  prototype-html/rollover.js, prototype-html/styles.css,
-	  prototype-html/timeline.html: Initial revision
+    * bets-appearance.csv, bets-timeline.csv, biotech-appearance.csv,
+      biotech-timeline.csv, longview.py, lvhtml.py, todo.txt,
+      prototype-html/header.html, prototype-html/index.html,
+      prototype-html/rollover.js, prototype-html/styles.css,
+      prototype-html/timeline.html: Initial revision
 

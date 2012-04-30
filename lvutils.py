@@ -1,4 +1,5 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
+
 """Utility classes for implementing Long View functionality."""
 
 # Copyright (c) 2004, The Long Now Foundation
@@ -26,20 +27,23 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-__author__ = "Dan Mosedale <timeline@list.longnow.org>"
-__version__ = "1.0"
-__copyright__ = "Copyright (c) 2004 The Long Now Foundation"
-__license__ = "BSD-style"
-
-# in pre 3.0 versions of python, without this import, 9/2=4, not 4.5.
-from __future__ import division
+from __future__ import absolute_import, division, with_statement
 
 import os
 import re
 import shutil
+
 from filecmp import dircmp
 
 import gd
+
+__author__ = "Dan Mosedale, James Home, and Ben Keating"
+__maintainer__ = "Ben Keating"
+__email__ = "oss+longview@longnow.org"
+
+__version__ = "1.1"
+__license__ = "BSD-style"
+__status__ = "Beta"
 
 
 class NowCellPNG:

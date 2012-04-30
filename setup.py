@@ -1,7 +1,8 @@
-#!/usr/bin/python -tt
+#!/usr/bin/env python
 
-# make a distribution of longview
-# Copyright (c) 2004, The Long Now Foundation
+"""make a distribution of longview"""
+
+# Copyright (c) 02004, The Long Now Foundation
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -26,16 +27,21 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-__author__ = "Dan Mosedale <timeline@list.longnow.org>"
-__version__ = "1.0"
-__copyright__ = "Copyright (c) 2004 The Long Now Foundation"
-__license__ = "BSD-style"
-
 import sys
 import glob
 import os
 
 from distutils.core import setup
+
+__author__ = "Dan Mosedale <oss+longview@longnow.org>"
+__maintainer__ = "Ben Keating"
+__email__ = "oss+longview@longnow.org"
+
+__version__ = "1.1"
+__copyright__ = "Copyright (c) 02004 The Long Now Foundation"
+__license__ = "BSD-style"
+__status__ = "Beta"
+
 
 # walk the prototype-html tree and generate the set of all relevant files
 protoFiles = []
@@ -51,10 +57,10 @@ for dirpath, dirnames, filenames in os.walk("prototype-html"):
     protoFiles.append((os.path.join("longview", dirpath), fileSet))
 
 setup(name="longview",
-      version="1.0",
+      version="1.1",
       author="The Long Now Foundation",
-      author_email="timeline@list.longnow.org",
-      url="http://www.longnow.org/",
+      author_email="oss+longview@longnow.org",
+      url="http://longnow.org/",
       py_modules=["lvhtml", "lvutils", "lvnotify", "sliceMaker"],
       scripts=["longview.py"],
       data_files=[("longview/examples",

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright (c) 2004, The Long Now Foundation
+# Copyright (c) 02004, The Long Now Foundation
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -25,13 +25,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-__author__ = "John Tangney and Dan Mosedale <timeline@list.longnow.org>"
-__version__ = "1.0"
-__copyright__ = "Copyright (c) The 2004 Long Now Foundation"
-__license__ = "BSD-style"
-
-# in pre 3.0 versions of python, without this import, 9/2=4, not 4.5.
-from __future__ import division
+from __future__ import absolute_import, division, with_statement
 
 import sys
 import string
@@ -40,9 +34,18 @@ import csv
 
 import gd
 
+__author__ = "John Tangney and Dan Mosedale"
+__maintainer__ = "Ben Keating"
+__email__ = "oss+longview@longnow.org"
+
+__version__ = "1.1"
+__copyright__ = "Copyright (c) 02004 The Long Now Foundation"
+__license__ = "BSD-style"
+__status__ = "Beta"
+
 
 class SlicedImage:
-
+    
     def __init__(self, width, height):
         self.__image = gd.image((width, height))
         self.__xOffset = 0
@@ -50,18 +53,18 @@ class SlicedImage:
         
         self.diamondWidth = 7
         """Width of any diamonds rendered."""
-
+        
         self.diamondLeftMargin = 2
         """Width of horizontal margin on the left side a diamond"""
-
+        
         self.diamondVerticalMargin = 0
         """Height of vertical margin above and below a diamond"""
         
         self.diamondColor = (0xff, 0xff, 0xff)
         """Color used to render diamonds."""
-
+        
         return
-
+    
     def addSlice(self, fields):
         """Add a slice to this image"""
         
@@ -69,52 +72,52 @@ class SlicedImage:
         def computeRgbValues(rgb, saturation, brightness):
             return map((lambda x:
                         adjustColorComponent(x, saturation, brightness)), rgb)
-
+        
         # Returns an integer value for the given component, adjusted for
         # brightness and saturation.
         def adjustColorComponent(component, saturation, brightness):
             answer = component * saturation + brightness * 255.0 * \
                      (1 - saturation)
             return int(round(answer))
-
+        
         width = fields["width"]
         height = fields["height"]
-
+        
         saturation = fields["saturation"]
         brightness = fields["brightness"]
-
+        
         upperHeight = int(round(height - (height * fields["lowerSize"])))
-
+        
         tl = (self.__xOffset, upperHeight + 1)
         br = (self.__xOffset + width, height)
         lowerColor = self.__image.colorAllocate(
             computeRgbValues(fields["lowerColor"],  saturation, brightness))
         self.__image.filledRectangle(tl, br, lowerColor)
-
+        
         tl = (self.__xOffset, upperHeight)
         br = (self.__xOffset + width, upperHeight + 1)
         dividerColor = self.__image.colorAllocate(
             computeRgbValues(fields["dividerColor"], saturation, brightness))
         self.__image.filledRectangle(tl, br, dividerColor)
-
+        
         tl = (self.__xOffset, 0)
         br = (self.__xOffset + width, upperHeight)
         upperColor = self.__image.colorAllocate(
             computeRgbValues(fields["upperColor"],  saturation, brightness))
         self.__image.filledRectangle(tl, br, upperColor)
-
+        
         self.__xOffset += width
         
         return
-
+    
     def drawDiamond(self, startX):
         """Draw a diamond whose leftmost point is at startX."""
-
+        
         # allocate diamond color, if we haven't already
         if not hasattr(self, '__diamondColorIndex'):
             self.__diamondColorIndex = self.__image.colorAllocate(
                 self.diamondColor)
-
+        
         # calculate the points
         bottomPoint = (startX + int(math.ceil(self.diamondWidth/2)),
                        self.__height-1 - self.diamondVerticalMargin)
@@ -122,46 +125,46 @@ class SlicedImage:
         topPoint = (startX + int(math.ceil(self.diamondWidth/2)),
                     self.diamondVerticalMargin)
         leftPoint = (startX + self.diamondLeftMargin, int(self.__height/2))
-
+        
         # draw the diamond
         diamond = (bottomPoint, rightPoint, topPoint, leftPoint)
         self.__image.filledPolygon(diamond, self.__diamondColorIndex)
-
+        
         return
 
-
+    
     def drawFilledSlice(self, startX, width, color):
         """Draw a filled slice
-
+        
         startX -- X coordinate where slice should start
         width -- width in pixels
         color -- color tuple
         """
-
+        
         colorIndex = self.__image.colorAllocate(color)
         self.__image.filledRectangle( (startX, 0),
                                       (startX + width - 1, self.__height),
                                       colorIndex )
         return
-
+    
     
     def generate(self, filename):
         """Write out a PNG file for this image"""
-
+        
         # write out the file
         file = open(filename, "w")
         self.__image.writePng(file)
         file.close()
-
-        return
         
+        return
+
 
 # Returns a tuple of red, green, and blue integer values, given a hex string
 def parseHexColor(hex):
     justHex = hex.split('#')[-1]
     return map((lambda x: string.atoi(x, 16)), (justHex[0:2], justHex[2:4], justHex[4:6]))
-
     
+
 def calculateTotalSize(inputFileName):
     width = 0
     height = 0
@@ -172,8 +175,8 @@ def calculateTotalSize(inputFileName):
         if fields["height"] > height:
             height = fields["height"]
     return int(width), int(height)
-
             
+
 # Given a list of input values, return a dictionary of same. This allows us to
 # deal with column positions in one place only.
 def mapInputFields(row):
@@ -198,19 +201,19 @@ def mapInputFields(row):
 
 
 def makeSlices(width, height, inputFileName, outputFileName):
-
+    
     slices = SlicedImage(width, height);
-
+    
     reader = csv.reader(file(inputFileName))
     for row in reader:
         fields = mapInputFields(row)
         slices.addSlice(fields)
-
+    
     slices.generate(outputFileName)
     return
 
 
-# We write an image per csv file.    
+# We write an image per csv file.
 def generateImage(inFile, outFile):
     print "Reading from %s and writing to %s" % (inFile, outFile)
     width, height = calculateTotalSize(inFile)
@@ -228,6 +231,6 @@ if __name__ == "__main__":
             outFile = inFile.split(".")[0] + ".png"
         else:
             outFile = sys.argv[2]
-            
+        
         generateImage(inFile, outFile)
 
